@@ -10,11 +10,6 @@
       "email": "kojirock5260@gmail.com"
     }
   ],
-  "config": {
-    "platform": {
-      "php": ">=5.6"
-    }
-  },
   "require": {
     "ext-json": "*",
     "ext-curl": "*",
