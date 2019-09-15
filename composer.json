@@ -1,0 +1,29 @@
+{
+  "name": "kojirock5260/simple-line-flex-message",
+  "description": "SimpleLineFlexMessage",
+  "keywords": ["line", "message", "api"],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "kojirock5260",
+      "email": "kojirock5260@gmail.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": ">=5.6"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*",
+    "php": ">=5.6",
+    "symfony/yaml": "^v3.4.31"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kojirock5260\\SimpleLineFlexMessage\\": "src/"
+    }
+  }
+}
