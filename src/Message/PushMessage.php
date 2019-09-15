@@ -18,6 +18,11 @@ class PushMessage
     private $channelAccessToken;
 
     /**
+     * @var CurlRequest
+     */
+    private $httpRequest;
+
+    /**
      * PushMessage constructor.
      * @param $channelAccessToken
      */
@@ -57,7 +62,7 @@ class PushMessage
         try {
             $response = $this->httpRequest->execute();
             if ($this->httpRequest->errorNumber() !== 0) {
-                throw new ($this->httpRequest->errorString());
+                throw new \Exception($this->httpRequest->errorString());
             }
 
             $jsonData = json_decode($response, true);
